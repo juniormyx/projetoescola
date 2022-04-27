@@ -16,46 +16,36 @@
         </div>
         <div class="row principal center-block">
             <div class="col-lg box-inside center-block text-center">
-                <table>
-                    <tr>
-                        <label>Nota do 1º Bimestre</label><br>
-                        <input type="text" name="number" size="30">     
-                        
-                    </tr>
-                    <tr>
-                        <td>Nota do 2º Bimestre</td>
-                        <td>
-                        <input type="text" name="number" size="30">     
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nota do 3º Bimestre</td>
-                        <td>
-                            <input type="text" name="number" size="30">     
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Nota do 4º Bimestre</td>
-                        <td>
-                        <input type="text" name="number" size="30">     
-                        </td>
-                    </tr>
-                </table>
                 
+                <label>Nota do 1º Bimestre</label>
+                <input type="text" name="number" size="30" id="primeiraNota"> <br>   
+                    
+                <label>Nota do 2º Bimestre</label>
+                <input type="text" name="number" size="30"> <br>
+                    
+                <label>Nota do 3º Bimestre</label>
+                <input type="text" name="number" size="30"> <br>  
+                
+                <label>Nota do 4º Bimestre</label>
+                <input type="text" name="number" size="30"> <br>     
             </div>
         </div>
+        <br> 
         <div class="row principal center-block">
             <div class="col-lg box-inside center-block text-center">
-                <button type="button" class="btn btn-primary">Gerar média</button>
+                <button type="button" class="btn btn-primary" onclick="calcularMedia()">Gerar média</button>
             </div>
         </div>
     </div>
     <br><br><br>
     
-    <div>
-        A média do aluno foi
+    <div class="row principal center-block">
+        <div class="col-lg box-inside center-block text-center">
+             <h1>A média do aluno foi</h1><br>
+             <h2 id="result"></h2>
+        </div>
     </div>
-    </div>
+
 </body>
 
 
