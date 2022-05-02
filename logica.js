@@ -1,33 +1,19 @@
-var media, n1, n2, n3, n4
-
 function calcularMedia() {
 
-n1 = document.getElementById("primeiraNota")
-    
+    var n1 = parseInt(document.getElementById("primeiraNota").value)
+    var n2 = parseInt(document.getElementById("segundaNota").value)
+    var n3 = parseInt(document.getElementById("terceiraNota").value)
+    var n4 = parseInt(document.getElementById("quartaNota").value)
 
-n1 = document.getElementById("segundaNota")
+    var media = parseFloat((n1 + n2 + n3 + n4) / 4)
 
+    if (media >= 7) {
+        document.write('Aluno Aprovado!')
+    }
+    else {
+        document.write('Aluno Reprovado!')
+    }
 
-n1 = document.getElementById("terceiraNota")
-
-
-n1 = document.getElementById("quartaNota")
-
-
-media = (n1 + n2 + n3 + n4) / 4
-
-if ( media >= 7 ) {
-    
-    
-    } else {
-    
-    if ( media <= 5 ) {
-    document.write ("Reprovado");
-    
-    } else {
-    
-    document.write ("Recuperação");
-    }}
 }
 
 calcularMedia()
